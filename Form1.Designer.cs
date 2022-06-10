@@ -236,13 +236,13 @@
             this.lblVaccinatedGuide.AutoSize = true;
             this.lblVaccinatedGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVaccinatedGuide.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblVaccinatedGuide.Location = new System.Drawing.Point(202, 537);
+            this.lblVaccinatedGuide.Location = new System.Drawing.Point(27, 541);
             this.lblVaccinatedGuide.Name = "lblVaccinatedGuide";
-            this.lblVaccinatedGuide.Size = new System.Drawing.Size(372, 80);
+            this.lblVaccinatedGuide.Size = new System.Drawing.Size(541, 80);
             this.lblVaccinatedGuide.TabIndex = 20;
-            this.lblVaccinatedGuide.Text = "If yes, type: Yes, [1st dose/2nd dose/booster shot],\r\n[Vaccine Manufacturer], sin" +
-    "ce [MM/DD/YYYY].\r\nExample: Yes, 2nd dose, AstraZeneca, 01/30/2022.\r\nIf no, just " +
-    "type \"No\".";
+            this.lblVaccinatedGuide.Text = "If yes, type: Yes, [1st dose/2nd dose/booster shot], [Vaccine Manufacturer], \r\nsi" +
+    "nce [MM/DD/YYYY]. \r\nExample: Yes, 2nd dose, AstraZeneca, 01/30/2022.\r\nIf no, jus" +
+    "t type \"No\".";
             // 
             // lblVaccinated
             // 
@@ -250,15 +250,15 @@
             this.lblVaccinated.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblVaccinated.Location = new System.Drawing.Point(27, 505);
             this.lblVaccinated.Name = "lblVaccinated";
-            this.lblVaccinated.Size = new System.Drawing.Size(173, 22);
+            this.lblVaccinated.Size = new System.Drawing.Size(222, 22);
             this.lblVaccinated.TabIndex = 18;
-            this.lblVaccinated.Text = "Are you vaccinated?";
+            this.lblVaccinated.Text = "Vaccinated for COVID-19?";
             // 
             // txtBoxVaccinated
             // 
-            this.txtBoxVaccinated.Location = new System.Drawing.Point(206, 503);
+            this.txtBoxVaccinated.Location = new System.Drawing.Point(255, 503);
             this.txtBoxVaccinated.Name = "txtBoxVaccinated";
-            this.txtBoxVaccinated.Size = new System.Drawing.Size(404, 26);
+            this.txtBoxVaccinated.Size = new System.Drawing.Size(355, 26);
             this.txtBoxVaccinated.TabIndex = 21;
             // 
             // btnSubmit

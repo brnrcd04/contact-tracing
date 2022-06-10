@@ -46,6 +46,8 @@ namespace contact_tracing
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             StreamWriter A = new StreamWriter(Application.StartupPath + @"\MyContactTracingForm.txt", true);
+            A.WriteLine("The following personal details below are automatically generated into this text file by BCN's Contact Tracing Form App. You may use this text file or copy its' contents for contact tracing purposes.");
+            A.WriteLine("");
             A.WriteLine(lblFullName.Text + " " + txtBoxFullName.Text);
             A.WriteLine(lblSex.Text + " " + txtBoxSex.Text);
             A.WriteLine(lblAge.Text + " " + txtBoxAge.Text);
@@ -54,6 +56,8 @@ namespace contact_tracing
             A.WriteLine(lblContactNo.Text + " " + txtBoxContactNo.Text);
             A.WriteLine(lblSymptoms.Text + " " + txtBoxSymptoms.Text);
             A.WriteLine(lblVaccinated.Text + " " + txtBoxVaccinated.Text);
+            A.WriteLine("");
+            A.WriteLine("Thank you for using this contact tracing form app!");
             A.Close();
         }
     }
