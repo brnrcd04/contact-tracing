@@ -57,7 +57,7 @@ namespace contact_tracing
             A.WriteLine(lblSymptoms.Text + " " + txtBoxSymptoms.Text);
             A.WriteLine(lblVaccinated.Text + " " + txtBoxVaccinated.Text);
             A.WriteLine("");
-            A.WriteLine("Thank you for using this contact tracing form app!");
+            A.WriteLine("Thank you for using the contact tracing form application!");
             A.Close();
 
             msgboxSubmit m = new msgboxSubmit();

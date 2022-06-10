@@ -242,7 +242,7 @@
             this.lblVaccinatedGuide.AutoSize = true;
             this.lblVaccinatedGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVaccinatedGuide.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblVaccinatedGuide.Location = new System.Drawing.Point(27, 541);
+            this.lblVaccinatedGuide.Location = new System.Drawing.Point(27, 540);
             this.lblVaccinatedGuide.Name = "lblVaccinatedGuide";
             this.lblVaccinatedGuide.Size = new System.Drawing.Size(541, 80);
             this.lblVaccinatedGuide.TabIndex = 20;
