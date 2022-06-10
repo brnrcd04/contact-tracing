@@ -31,5 +31,20 @@ namespace contact_tracing
         {
 
         }
+
+        private void lblNameGuide_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmailAddress_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
