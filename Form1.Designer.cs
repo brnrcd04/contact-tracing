@@ -286,7 +286,7 @@
             this.lblSubmitButtonInfo.Size = new System.Drawing.Size(432, 40);
             this.lblSubmitButtonInfo.TabIndex = 23;
             this.lblSubmitButtonInfo.Text = "As you click the \"Submit\" button, a text file will be generated \r\nwhich contains " +
-    "the data you submitted in this application.";
+    "the data you submitted to this application.";
             this.lblSubmitButtonInfo.Click += new System.EventHandler(this.lblSubmitButtonInfo_Click);
             // 
             // lblInfoIcon
