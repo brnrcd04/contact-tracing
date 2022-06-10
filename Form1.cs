@@ -20,7 +20,7 @@ namespace contact_tracing
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            btnSubmit.Enabled = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -59,6 +59,23 @@ namespace contact_tracing
             A.WriteLine("");
             A.WriteLine("Thank you for using this contact tracing form app!");
             A.Close();
+
+            msgboxSubmit m = new msgboxSubmit();
+            m.Show();
+
+        }
+
+        private void lblSubmitButtonInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxFullName_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxFullName.Text != "" && txtBoxSex.Text != "" && txtBoxAge.Text != "" && txtBoxAddress.Text != "" && txtBoxContactNo.Text != "" && txtBoxEmail.Text != "" && txtBoxSymptoms.Text != "" && txtBoxVaccinated.Text != "")
+            {
+                btnSubmit.Enabled = true;
+            }
         }
     }
 }

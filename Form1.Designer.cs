@@ -147,6 +147,7 @@
             this.txtBoxFullName.Name = "txtBoxFullName";
             this.txtBoxFullName.Size = new System.Drawing.Size(341, 26);
             this.txtBoxFullName.TabIndex = 8;
+            this.txtBoxFullName.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // lblFullNameGuide
             // 
@@ -166,6 +167,7 @@
             this.txtBoxAge.Name = "txtBoxAge";
             this.txtBoxAge.Size = new System.Drawing.Size(45, 26);
             this.txtBoxAge.TabIndex = 10;
+            this.txtBoxAge.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // txtBoxAddress
             // 
@@ -174,6 +176,7 @@
             this.txtBoxAddress.Name = "txtBoxAddress";
             this.txtBoxAddress.Size = new System.Drawing.Size(497, 50);
             this.txtBoxAddress.TabIndex = 11;
+            this.txtBoxAddress.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // lblAddressGuide
             // 
@@ -193,6 +196,7 @@
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(257, 26);
             this.txtBoxEmail.TabIndex = 13;
+            this.txtBoxEmail.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // txtBoxContactNo
             // 
@@ -200,6 +204,7 @@
             this.txtBoxContactNo.Name = "txtBoxContactNo";
             this.txtBoxContactNo.Size = new System.Drawing.Size(123, 26);
             this.txtBoxContactNo.TabIndex = 14;
+            this.txtBoxContactNo.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // lblSymptoms
             // 
@@ -218,6 +223,7 @@
             this.txtBoxSymptoms.Name = "txtBoxSymptoms";
             this.txtBoxSymptoms.Size = new System.Drawing.Size(580, 26);
             this.txtBoxSymptoms.TabIndex = 16;
+            this.txtBoxSymptoms.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // lblSymptomsGuide
             // 
@@ -241,8 +247,8 @@
             this.lblVaccinatedGuide.Size = new System.Drawing.Size(541, 80);
             this.lblVaccinatedGuide.TabIndex = 20;
             this.lblVaccinatedGuide.Text = "If yes, type: Yes, [1st dose/2nd dose/booster shot], [Vaccine Manufacturer], \r\nsi" +
-    "nce [MM/DD/YYYY]. \r\nExample: Yes, 2nd dose, AstraZeneca, 01/30/2022.\r\nIf no, jus" +
-    "t type \"No\".";
+    "nce [MM/DD/YYYY]. \r\nExample: Yes, 2nd dose, AstraZeneca, since 01/30/2022.\r\nIf n" +
+    "o, just type \"No\".";
             // 
             // lblVaccinated
             // 
@@ -260,6 +266,7 @@
             this.txtBoxVaccinated.Name = "txtBoxVaccinated";
             this.txtBoxVaccinated.Size = new System.Drawing.Size(355, 26);
             this.txtBoxVaccinated.TabIndex = 21;
+            this.txtBoxVaccinated.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // btnSubmit
             // 
@@ -280,6 +287,7 @@
             this.lblSubmitButtonInfo.TabIndex = 23;
             this.lblSubmitButtonInfo.Text = "As you click the \"Submit\" button, a text file will be generated \r\nwhich contains " +
     "the data you submitted in this application.";
+            this.lblSubmitButtonInfo.Click += new System.EventHandler(this.lblSubmitButtonInfo_Click);
             // 
             // lblInfoIcon
             // 
@@ -297,6 +305,7 @@
             this.txtBoxSex.Name = "txtBoxSex";
             this.txtBoxSex.Size = new System.Drawing.Size(75, 26);
             this.txtBoxSex.TabIndex = 26;
+            this.txtBoxSex.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // lblSex
             // 
