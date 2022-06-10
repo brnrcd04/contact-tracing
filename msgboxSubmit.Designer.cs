@@ -40,7 +40,7 @@
             this.lblSuccess.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblSuccess.Location = new System.Drawing.Point(22, 144);
             this.lblSuccess.Name = "lblSuccess";
-            this.lblSuccess.Size = new System.Drawing.Size(494, 150);
+            this.lblSuccess.Size = new System.Drawing.Size(615, 150);
             this.lblSuccess.TabIndex = 0;
             this.lblSuccess.Text = resources.GetString("lblSuccess.Text");
             this.lblSuccess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -49,7 +49,7 @@
             // 
             this.lblCheckIcon.AutoSize = true;
             this.lblCheckIcon.Font = new System.Drawing.Font("Font Awesome 5 Pro Regular", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCheckIcon.Location = new System.Drawing.Point(230, 20);
+            this.lblCheckIcon.Location = new System.Drawing.Point(285, 20);
             this.lblCheckIcon.Name = "lblCheckIcon";
             this.lblCheckIcon.Size = new System.Drawing.Size(139, 102);
             this.lblCheckIcon.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(256, 321);
+            this.button1.Location = new System.Drawing.Point(311, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 36);
             this.button1.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 378);
+            this.ClientSize = new System.Drawing.Size(697, 378);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCheckIcon);
             this.Controls.Add(this.lblSuccess);
@@ -77,7 +77,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "msgboxSubmit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Success";
+            this.Text = "Success!";
             this.ResumeLayout(false);
             this.PerformLayout();
 
