@@ -205,7 +205,7 @@
             // 
             this.lblSymptoms.AutoSize = true;
             this.lblSymptoms.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblSymptoms.Location = new System.Drawing.Point(26, 385);
+            this.lblSymptoms.Location = new System.Drawing.Point(26, 379);
             this.lblSymptoms.Name = "lblSymptoms";
             this.lblSymptoms.Size = new System.Drawing.Size(361, 22);
             this.lblSymptoms.TabIndex = 15;
@@ -213,7 +213,7 @@
             // 
             // txtBoxSymptoms
             // 
-            this.txtBoxSymptoms.Location = new System.Drawing.Point(30, 417);
+            this.txtBoxSymptoms.Location = new System.Drawing.Point(30, 411);
             this.txtBoxSymptoms.Multiline = true;
             this.txtBoxSymptoms.Name = "txtBoxSymptoms";
             this.txtBoxSymptoms.Size = new System.Drawing.Size(580, 26);
@@ -224,7 +224,7 @@
             this.lblSymptomsGuide.AutoSize = true;
             this.lblSymptomsGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSymptomsGuide.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblSymptomsGuide.Location = new System.Drawing.Point(25, 451);
+            this.lblSymptomsGuide.Location = new System.Drawing.Point(25, 445);
             this.lblSymptomsGuide.Name = "lblSymptomsGuide";
             this.lblSymptomsGuide.Size = new System.Drawing.Size(549, 40);
             this.lblSymptomsGuide.TabIndex = 17;
@@ -236,7 +236,7 @@
             this.lblVaccinatedGuide.AutoSize = true;
             this.lblVaccinatedGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVaccinatedGuide.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblVaccinatedGuide.Location = new System.Drawing.Point(202, 539);
+            this.lblVaccinatedGuide.Location = new System.Drawing.Point(202, 537);
             this.lblVaccinatedGuide.Name = "lblVaccinatedGuide";
             this.lblVaccinatedGuide.Size = new System.Drawing.Size(372, 80);
             this.lblVaccinatedGuide.TabIndex = 20;
@@ -248,7 +248,7 @@
             // 
             this.lblVaccinated.AutoSize = true;
             this.lblVaccinated.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblVaccinated.Location = new System.Drawing.Point(27, 507);
+            this.lblVaccinated.Location = new System.Drawing.Point(27, 505);
             this.lblVaccinated.Name = "lblVaccinated";
             this.lblVaccinated.Size = new System.Drawing.Size(173, 22);
             this.lblVaccinated.TabIndex = 18;
@@ -256,7 +256,7 @@
             // 
             // txtBoxVaccinated
             // 
-            this.txtBoxVaccinated.Location = new System.Drawing.Point(206, 505);
+            this.txtBoxVaccinated.Location = new System.Drawing.Point(206, 503);
             this.txtBoxVaccinated.Name = "txtBoxVaccinated";
             this.txtBoxVaccinated.Size = new System.Drawing.Size(404, 26);
             this.txtBoxVaccinated.TabIndex = 21;
@@ -276,10 +276,10 @@
             this.lblSubmitButtonInfo.AutoSize = true;
             this.lblSubmitButtonInfo.Location = new System.Drawing.Point(73, 641);
             this.lblSubmitButtonInfo.Name = "lblSubmitButtonInfo";
-            this.lblSubmitButtonInfo.Size = new System.Drawing.Size(425, 40);
+            this.lblSubmitButtonInfo.Size = new System.Drawing.Size(432, 40);
             this.lblSubmitButtonInfo.TabIndex = 23;
-            this.lblSubmitButtonInfo.Text = "As you click the \"Submit\" button, a text file will automatically\r\nopen containing" +
-    " the data you submitted in this application.";
+            this.lblSubmitButtonInfo.Text = "As you click the \"Submit\" button, a text file will be generated \r\nwhich contains " +
+    "the data you submitted in this application.";
             // 
             // lblInfoIcon
             // 
@@ -343,6 +343,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BCN\'s Contact Tracing Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

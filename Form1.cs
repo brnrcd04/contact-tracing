@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace contact_tracing
 {
@@ -44,7 +45,16 @@ namespace contact_tracing
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            StreamWriter A = new StreamWriter(Application.StartupPath + @"\MyContactTracingForm.txt", true);
+            A.WriteLine(lblFullName.Text + " " + txtBoxFullName.Text);
+            A.WriteLine(lblSex.Text + " " + txtBoxSex.Text);
+            A.WriteLine(lblAge.Text + " " + txtBoxAge.Text);
+            A.WriteLine(lblAddress.Text + " " + txtBoxAddress.Text);
+            A.WriteLine(lblEmail.Text + " " + txtBoxEmail.Text);
+            A.WriteLine(lblContactNo.Text + " " + txtBoxContactNo.Text);
+            A.WriteLine(lblSymptoms.Text + " " + txtBoxSymptoms.Text);
+            A.WriteLine(lblVaccinated.Text + " " + txtBoxVaccinated.Text);
+            A.Close();
         }
     }
 }
