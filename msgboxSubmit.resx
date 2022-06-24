@@ -125,10 +125,9 @@ Due to privacy reasons, only the administrators are
 allowed to access all of the various contact-tracing
 data recorded by this application.
 
-If you're an administrator who needed access to
-the records, just click the "View Records" button
-on the application then provide the credentials
-required to gain access.</value>
+A text file named "ContactTracingFormRecords.txt" 
+has been automatically generated. It can be accessed 
+on the same directory where this application is located.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

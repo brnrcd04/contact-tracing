@@ -60,7 +60,11 @@
             this.dataGVRecords = new System.Windows.Forms.DataGridView();
             this.columnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblRecords = new System.Windows.Forms.Label();
+            this.lblFilter = new System.Windows.Forms.Label();
+            this.txtBoxDateFilter = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnViewFilteredDate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVRecords)).BeginInit();
             this.SuspendLayout();
             // 
@@ -290,10 +294,10 @@
             this.lblSubmitButtonInfo.AutoSize = true;
             this.lblSubmitButtonInfo.Location = new System.Drawing.Point(73, 641);
             this.lblSubmitButtonInfo.Name = "lblSubmitButtonInfo";
-            this.lblSubmitButtonInfo.Size = new System.Drawing.Size(432, 40);
+            this.lblSubmitButtonInfo.Size = new System.Drawing.Size(436, 40);
             this.lblSubmitButtonInfo.TabIndex = 23;
-            this.lblSubmitButtonInfo.Text = "As you click the \"Submit\" button, a text file will be generated \r\nwhich contains " +
-    "the data you submitted to this application.";
+            this.lblSubmitButtonInfo.Text = "As you click the \"Submit\" button, the information filled-out will\r\nbe automatical" +
+    "ly recorded and saved by this application.";
             this.lblSubmitButtonInfo.Click += new System.EventHandler(this.lblSubmitButtonInfo_Click);
             // 
             // lblInfoIcon
@@ -337,7 +341,7 @@
             // 
             // dateTimePickerVaccination
             // 
-            this.dateTimePickerVaccination.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerVaccination.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerVaccination.Location = new System.Drawing.Point(516, 507);
             this.dateTimePickerVaccination.MaxDate = new System.DateTime(2022, 6, 24, 0, 0, 0, 0);
             this.dateTimePickerVaccination.MinDate = new System.DateTime(2021, 3, 1, 0, 0, 0, 0);
@@ -353,11 +357,11 @@
             this.dataGVRecords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnFullName,
             this.columnDate});
-            this.dataGVRecords.Location = new System.Drawing.Point(686, 67);
+            this.dataGVRecords.Location = new System.Drawing.Point(684, 67);
             this.dataGVRecords.Name = "dataGVRecords";
             this.dataGVRecords.RowHeadersWidth = 62;
             this.dataGVRecords.RowTemplate.Height = 28;
-            this.dataGVRecords.Size = new System.Drawing.Size(548, 473);
+            this.dataGVRecords.Size = new System.Drawing.Size(548, 541);
             this.dataGVRecords.TabIndex = 31;
             this.dataGVRecords.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -376,23 +380,68 @@
             this.columnDate.MinimumWidth = 8;
             this.columnDate.Name = "columnDate";
             this.columnDate.ReadOnly = true;
+            this.columnDate.Width = 150;
+            // 
+            // lblRecords
+            // 
+            this.lblRecords.AutoSize = true;
+            this.lblRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblRecords.Location = new System.Drawing.Point(779, 30);
+            this.lblRecords.Name = "lblRecords";
+            this.lblRecords.Size = new System.Drawing.Size(359, 22);
+            this.lblRecords.TabIndex = 32;
+            this.lblRecords.Text = "Records of Contact-Tracing Data Submitted\r\n";
+            // 
+            // lblFilter
+            // 
+            this.lblFilter.AutoSize = true;
+            this.lblFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblFilter.Location = new System.Drawing.Point(681, 639);
+            this.lblFilter.Name = "lblFilter";
+            this.lblFilter.Size = new System.Drawing.Size(274, 22);
+            this.lblFilter.TabIndex = 33;
+            this.lblFilter.Text = "View only vaccination date since:";
+            this.lblFilter.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // txtBoxDateFilter
+            // 
+            this.txtBoxDateFilter.Location = new System.Drawing.Point(961, 637);
+            this.txtBoxDateFilter.Name = "txtBoxDateFilter";
+            this.txtBoxDateFilter.Size = new System.Drawing.Size(114, 26);
+            this.txtBoxDateFilter.TabIndex = 38;
+            this.txtBoxDateFilter.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label1.Location = new System.Drawing.Point(823, 30);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Location = new System.Drawing.Point(681, 670);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 22);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Records of Contact-Tracing Data\r\n";
+            this.label1.Size = new System.Drawing.Size(327, 20);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Format: MM/DD/YYYY; Example: 12/31/2021";
+            // 
+            // btnViewFilteredDate
+            // 
+            this.btnViewFilteredDate.Location = new System.Drawing.Point(1136, 637);
+            this.btnViewFilteredDate.Name = "btnViewFilteredDate";
+            this.btnViewFilteredDate.Size = new System.Drawing.Size(96, 43);
+            this.btnViewFilteredDate.TabIndex = 40;
+            this.btnViewFilteredDate.Text = "View";
+            this.btnViewFilteredDate.UseVisualStyleBackColor = true;
+            this.btnViewFilteredDate.Click += new System.EventHandler(this.btnViewFilteredDate_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1261, 710);
+            this.Controls.Add(this.btnViewFilteredDate);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtBoxDateFilter);
+            this.Controls.Add(this.lblFilter);
+            this.Controls.Add(this.lblRecords);
             this.Controls.Add(this.dataGVRecords);
             this.Controls.Add(this.dateTimePickerVaccination);
             this.Controls.Add(this.lblSince);
@@ -468,7 +517,11 @@
         private System.Windows.Forms.DataGridView dataGVRecords;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnFullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnDate;
+        private System.Windows.Forms.Label lblRecords;
+        private System.Windows.Forms.Label lblFilter;
+        private System.Windows.Forms.TextBox txtBoxDateFilter;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnViewFilteredDate;
     }
 }
 

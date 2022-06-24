@@ -70,12 +70,6 @@ namespace contact_tracing
             msgboxSubmit m = new msgboxSubmit();
             m.Show();
 
-            FileInfo FIv1 = new FileInfo(Environment.CurrentDirectory + @"\ContactTracingFormRecords.txt");
-            FIv1.Attributes = FileAttributes.Normal;
-
-            FileInfo FIh1 = new FileInfo(Environment.CurrentDirectory + @"\ContactTracingFormRecords.txt");
-            FIh1.Attributes = FileAttributes.Hidden;
-
             dataGVRecords.Rows.Add(txtBoxFullName.Text, dateTimePickerVaccination.Text);
         }
 
@@ -110,6 +104,66 @@ namespace contact_tracing
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOpentxt_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"\ContactTracingFormRecords.txt");
+        }
+
+        private void dateTimePickerto_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewFilteredDate_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewFilteredDate_Click_1(object sender, EventArgs e)
+        {
+            {
+                string searchValue = txtBoxDateFilter.Text;
+                dataGVRecords.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                try
+                {
+                    bool valueResult = false;
+                    foreach (DataGridViewRow row in dataGVRecords.Rows)
+                    {
+                        for (int i = 0; i < row.Cells.Count; i++)
+                        {
+                            if (row.Cells[i].Value != null && row.Cells[i].Value.ToString().Equals(searchValue))
+                            {
+                                int rowIndex = row.Index;
+                                dataGVRecords.Rows[rowIndex].Selected = true;
+                                valueResult = true;
+                                break;
+                            }
+                        }
+
+                    }
+                    if (!valueResult)
+                    {
+                        MessageBox.Show("Unable to find " + txtBoxDateFilter.Text, "Not Found");
+                        return;
+                    }
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show(exc.Message);
+                }
+            }
         }
     }
 }

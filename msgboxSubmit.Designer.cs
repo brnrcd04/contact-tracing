@@ -38,9 +38,9 @@
             // 
             this.lblSuccess.AutoSize = true;
             this.lblSuccess.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblSuccess.Location = new System.Drawing.Point(22, 131);
+            this.lblSuccess.Location = new System.Drawing.Point(22, 143);
             this.lblSuccess.Name = "lblSuccess";
-            this.lblSuccess.Size = new System.Drawing.Size(494, 275);
+            this.lblSuccess.Size = new System.Drawing.Size(494, 250);
             this.lblSuccess.TabIndex = 0;
             this.lblSuccess.Text = resources.GetString("lblSuccess.Text");
             this.lblSuccess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
