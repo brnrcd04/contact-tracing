@@ -63,8 +63,9 @@
             this.lblRecords = new System.Windows.Forms.Label();
             this.lblFilter = new System.Windows.Forms.Label();
             this.txtBoxDateFilter = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDateFilterFormat = new System.Windows.Forms.Label();
             this.btnViewFilteredDate = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVRecords)).BeginInit();
             this.SuspendLayout();
             // 
@@ -411,16 +412,16 @@
             this.txtBoxDateFilter.TabIndex = 38;
             this.txtBoxDateFilter.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label1
+            // lblDateFilterFormat
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label1.Location = new System.Drawing.Point(681, 670);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 20);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Format: MM/DD/YYYY; Example: 12/31/2021";
+            this.lblDateFilterFormat.AutoSize = true;
+            this.lblDateFilterFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateFilterFormat.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblDateFilterFormat.Location = new System.Drawing.Point(681, 670);
+            this.lblDateFilterFormat.Name = "lblDateFilterFormat";
+            this.lblDateFilterFormat.Size = new System.Drawing.Size(327, 20);
+            this.lblDateFilterFormat.TabIndex = 39;
+            this.lblDateFilterFormat.Text = "Format: MM/DD/YYYY; Example: 12/31/2021";
             // 
             // btnViewFilteredDate
             // 
@@ -432,13 +433,26 @@
             this.btnViewFilteredDate.UseVisualStyleBackColor = true;
             this.btnViewFilteredDate.Click += new System.EventHandler(this.btnViewFilteredDate_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("SF Mono", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(130, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 48);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "VER\r\n2.0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1261, 710);
-            this.Controls.Add(this.btnViewFilteredDate);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFacemaskIcon);
+            this.Controls.Add(this.btnViewFilteredDate);
+            this.Controls.Add(this.lblDateFilterFormat);
             this.Controls.Add(this.txtBoxDateFilter);
             this.Controls.Add(this.lblFilter);
             this.Controls.Add(this.lblRecords);
@@ -468,7 +482,6 @@
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblFullName);
             this.Controls.Add(this.lblAppDevName);
-            this.Controls.Add(this.lblFacemaskIcon);
             this.Controls.Add(this.lblContactTracingForm);
             this.Controls.Add(this.lblInfoIcon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -520,8 +533,9 @@
         private System.Windows.Forms.Label lblRecords;
         private System.Windows.Forms.Label lblFilter;
         private System.Windows.Forms.TextBox txtBoxDateFilter;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDateFilterFormat;
         private System.Windows.Forms.Button btnViewFilteredDate;
+        private System.Windows.Forms.Label label1;
     }
 }
 
