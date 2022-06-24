@@ -58,14 +58,14 @@
             this.lblSince = new System.Windows.Forms.Label();
             this.dateTimePickerVaccination = new System.Windows.Forms.DateTimePicker();
             this.dataGVRecords = new System.Windows.Forms.DataGridView();
-            this.columnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblRecords = new System.Windows.Forms.Label();
             this.lblFilter = new System.Windows.Forms.Label();
             this.txtBoxDateFilter = new System.Windows.Forms.TextBox();
             this.lblDateFilterFormat = new System.Windows.Forms.Label();
             this.btnViewFilteredDate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.columnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVRecords)).BeginInit();
             this.SuspendLayout();
             // 
@@ -366,23 +366,6 @@
             this.dataGVRecords.TabIndex = 31;
             this.dataGVRecords.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // columnFullName
-            // 
-            this.columnFullName.Frozen = true;
-            this.columnFullName.HeaderText = "Full Name";
-            this.columnFullName.MinimumWidth = 8;
-            this.columnFullName.Name = "columnFullName";
-            this.columnFullName.ReadOnly = true;
-            this.columnFullName.Width = 200;
-            // 
-            // columnDate
-            // 
-            this.columnDate.HeaderText = "Vaccinated since";
-            this.columnDate.MinimumWidth = 8;
-            this.columnDate.Name = "columnDate";
-            this.columnDate.ReadOnly = true;
-            this.columnDate.Width = 150;
-            // 
             // lblRecords
             // 
             this.lblRecords.AutoSize = true;
@@ -443,6 +426,22 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "VER\r\n2.0";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // columnFullName
+            // 
+            this.columnFullName.Frozen = true;
+            this.columnFullName.HeaderText = "Full Name";
+            this.columnFullName.MinimumWidth = 8;
+            this.columnFullName.Name = "columnFullName";
+            this.columnFullName.ReadOnly = true;
+            this.columnFullName.Width = 200;
+            // 
+            // columnDate
+            // 
+            this.columnDate.HeaderText = "Vaccinated since";
+            this.columnDate.MinimumWidth = 8;
+            this.columnDate.Name = "columnDate";
+            this.columnDate.ReadOnly = true;
             // 
             // Form1
             // 
@@ -528,14 +527,14 @@
         private System.Windows.Forms.Label lblSince;
         private System.Windows.Forms.DateTimePicker dateTimePickerVaccination;
         private System.Windows.Forms.DataGridView dataGVRecords;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnFullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnDate;
         private System.Windows.Forms.Label lblRecords;
         private System.Windows.Forms.Label lblFilter;
         private System.Windows.Forms.TextBox txtBoxDateFilter;
         private System.Windows.Forms.Label lblDateFilterFormat;
         private System.Windows.Forms.Button btnViewFilteredDate;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnFullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnDate;
     }
 }
 
