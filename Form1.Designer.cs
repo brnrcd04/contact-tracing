@@ -55,13 +55,20 @@
             this.lblInfoIcon = new System.Windows.Forms.Label();
             this.txtBoxSex = new System.Windows.Forms.TextBox();
             this.lblSex = new System.Windows.Forms.Label();
+            this.lblSince = new System.Windows.Forms.Label();
+            this.dateTimePickerVaccination = new System.Windows.Forms.DateTimePicker();
+            this.dataGVRecords = new System.Windows.Forms.DataGridView();
+            this.columnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVRecords)).BeginInit();
             this.SuspendLayout();
             // 
             // lblContactTracingForm
             // 
             this.lblContactTracingForm.AutoSize = true;
             this.lblContactTracingForm.Font = new System.Drawing.Font("SF Pro Display", 23F, System.Drawing.FontStyle.Bold);
-            this.lblContactTracingForm.Location = new System.Drawing.Point(152, 30);
+            this.lblContactTracingForm.Location = new System.Drawing.Point(174, 30);
             this.lblContactTracingForm.Name = "lblContactTracingForm";
             this.lblContactTracingForm.Size = new System.Drawing.Size(473, 55);
             this.lblContactTracingForm.TabIndex = 0;
@@ -71,7 +78,7 @@
             // 
             this.lblAppDevName.AutoSize = true;
             this.lblAppDevName.Font = new System.Drawing.Font("SF Mono", 14F, System.Drawing.FontStyle.Bold);
-            this.lblAppDevName.Location = new System.Drawing.Point(159, 87);
+            this.lblAppDevName.Location = new System.Drawing.Point(181, 87);
             this.lblAppDevName.Name = "lblAppDevName";
             this.lblAppDevName.Size = new System.Drawing.Size(440, 33);
             this.lblAppDevName.TabIndex = 2;
@@ -174,7 +181,7 @@
             this.txtBoxAddress.Location = new System.Drawing.Point(113, 223);
             this.txtBoxAddress.Multiline = true;
             this.txtBoxAddress.Name = "txtBoxAddress";
-            this.txtBoxAddress.Size = new System.Drawing.Size(497, 50);
+            this.txtBoxAddress.Size = new System.Drawing.Size(523, 50);
             this.txtBoxAddress.TabIndex = 11;
             this.txtBoxAddress.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
@@ -202,7 +209,7 @@
             // 
             this.txtBoxContactNo.Location = new System.Drawing.Point(487, 338);
             this.txtBoxContactNo.Name = "txtBoxContactNo";
-            this.txtBoxContactNo.Size = new System.Drawing.Size(123, 26);
+            this.txtBoxContactNo.Size = new System.Drawing.Size(149, 26);
             this.txtBoxContactNo.TabIndex = 14;
             this.txtBoxContactNo.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
@@ -221,7 +228,7 @@
             this.txtBoxSymptoms.Location = new System.Drawing.Point(30, 411);
             this.txtBoxSymptoms.Multiline = true;
             this.txtBoxSymptoms.Name = "txtBoxSymptoms";
-            this.txtBoxSymptoms.Size = new System.Drawing.Size(580, 26);
+            this.txtBoxSymptoms.Size = new System.Drawing.Size(606, 26);
             this.txtBoxSymptoms.TabIndex = 16;
             this.txtBoxSymptoms.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
@@ -244,33 +251,33 @@
             this.lblVaccinatedGuide.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.lblVaccinatedGuide.Location = new System.Drawing.Point(27, 540);
             this.lblVaccinatedGuide.Name = "lblVaccinatedGuide";
-            this.lblVaccinatedGuide.Size = new System.Drawing.Size(541, 80);
+            this.lblVaccinatedGuide.Size = new System.Drawing.Size(365, 80);
             this.lblVaccinatedGuide.TabIndex = 20;
-            this.lblVaccinatedGuide.Text = "If yes, type: Yes, [1st dose/2nd dose/booster shot], [Vaccine Manufacturer], \r\nsi" +
-    "nce [MM/DD/YYYY]. \r\nExample: Yes, 2nd dose, AstraZeneca, since 01/30/2022.\r\nIf n" +
-    "o, just type \"No\".";
+            this.lblVaccinatedGuide.Text = "If yes, type: Yes, [1st dose/2nd dose/booster shot],\r\n[Vaccine Manufacturer].\r\nEx" +
+    "ample: Yes, 2nd dose, AstraZeneca.\r\nIf no, just type \"No\".";
+            this.lblVaccinatedGuide.Click += new System.EventHandler(this.lblVaccinatedGuide_Click);
             // 
             // lblVaccinated
             // 
             this.lblVaccinated.AutoSize = true;
             this.lblVaccinated.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblVaccinated.Location = new System.Drawing.Point(27, 505);
+            this.lblVaccinated.Location = new System.Drawing.Point(27, 509);
             this.lblVaccinated.Name = "lblVaccinated";
-            this.lblVaccinated.Size = new System.Drawing.Size(222, 22);
+            this.lblVaccinated.Size = new System.Drawing.Size(176, 22);
             this.lblVaccinated.TabIndex = 18;
-            this.lblVaccinated.Text = "Vaccinated for COVID-19?";
+            this.lblVaccinated.Text = "Are you Vaccinated?";
             // 
             // txtBoxVaccinated
             // 
-            this.txtBoxVaccinated.Location = new System.Drawing.Point(255, 503);
+            this.txtBoxVaccinated.Location = new System.Drawing.Point(206, 507);
             this.txtBoxVaccinated.Name = "txtBoxVaccinated";
-            this.txtBoxVaccinated.Size = new System.Drawing.Size(355, 26);
+            this.txtBoxVaccinated.Size = new System.Drawing.Size(231, 26);
             this.txtBoxVaccinated.TabIndex = 21;
             this.txtBoxVaccinated.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(516, 640);
+            this.btnSubmit.Location = new System.Drawing.Point(540, 641);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(96, 43);
             this.btnSubmit.TabIndex = 22;
@@ -303,7 +310,7 @@
             // 
             this.txtBoxSex.Location = new System.Drawing.Point(535, 155);
             this.txtBoxSex.Name = "txtBoxSex";
-            this.txtBoxSex.Size = new System.Drawing.Size(75, 26);
+            this.txtBoxSex.Size = new System.Drawing.Size(101, 26);
             this.txtBoxSex.TabIndex = 26;
             this.txtBoxSex.TextChanged += new System.EventHandler(this.txtBoxFullName_TextChanged);
             // 
@@ -317,11 +324,78 @@
             this.lblSex.TabIndex = 25;
             this.lblSex.Text = "Sex:";
             // 
+            // lblSince
+            // 
+            this.lblSince.AutoSize = true;
+            this.lblSince.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSince.Location = new System.Drawing.Point(452, 509);
+            this.lblSince.Name = "lblSince";
+            this.lblSince.Size = new System.Drawing.Size(60, 22);
+            this.lblSince.TabIndex = 27;
+            this.lblSince.Text = "Since:";
+            this.lblSince.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // dateTimePickerVaccination
+            // 
+            this.dateTimePickerVaccination.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerVaccination.Location = new System.Drawing.Point(516, 507);
+            this.dateTimePickerVaccination.MaxDate = new System.DateTime(2022, 6, 24, 0, 0, 0, 0);
+            this.dateTimePickerVaccination.MinDate = new System.DateTime(2021, 3, 1, 0, 0, 0, 0);
+            this.dateTimePickerVaccination.Name = "dateTimePickerVaccination";
+            this.dateTimePickerVaccination.Size = new System.Drawing.Size(120, 26);
+            this.dateTimePickerVaccination.TabIndex = 30;
+            this.dateTimePickerVaccination.Value = new System.DateTime(2022, 6, 24, 0, 0, 0, 0);
+            this.dateTimePickerVaccination.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // dataGVRecords
+            // 
+            this.dataGVRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGVRecords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.columnFullName,
+            this.columnDate});
+            this.dataGVRecords.Location = new System.Drawing.Point(686, 67);
+            this.dataGVRecords.Name = "dataGVRecords";
+            this.dataGVRecords.RowHeadersWidth = 62;
+            this.dataGVRecords.RowTemplate.Height = 28;
+            this.dataGVRecords.Size = new System.Drawing.Size(548, 473);
+            this.dataGVRecords.TabIndex = 31;
+            this.dataGVRecords.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // columnFullName
+            // 
+            this.columnFullName.Frozen = true;
+            this.columnFullName.HeaderText = "Full Name";
+            this.columnFullName.MinimumWidth = 8;
+            this.columnFullName.Name = "columnFullName";
+            this.columnFullName.ReadOnly = true;
+            this.columnFullName.Width = 200;
+            // 
+            // columnDate
+            // 
+            this.columnDate.HeaderText = "Vaccinated since";
+            this.columnDate.MinimumWidth = 8;
+            this.columnDate.Name = "columnDate";
+            this.columnDate.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label1.Location = new System.Drawing.Point(823, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(274, 22);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Records of Contact-Tracing Data\r\n";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 710);
+            this.ClientSize = new System.Drawing.Size(1261, 710);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGVRecords);
+            this.Controls.Add(this.dateTimePickerVaccination);
+            this.Controls.Add(this.lblSince);
             this.Controls.Add(this.txtBoxSex);
             this.Controls.Add(this.lblSex);
             this.Controls.Add(this.lblSubmitButtonInfo);
@@ -355,6 +429,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BCN\'s Contact Tracing Form";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVRecords)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,6 +463,12 @@
         private System.Windows.Forms.Label lblInfoIcon;
         private System.Windows.Forms.TextBox txtBoxSex;
         private System.Windows.Forms.Label lblSex;
+        private System.Windows.Forms.Label lblSince;
+        private System.Windows.Forms.DateTimePicker dateTimePickerVaccination;
+        private System.Windows.Forms.DataGridView dataGVRecords;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnFullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnDate;
+        private System.Windows.Forms.Label label1;
     }
 }
 

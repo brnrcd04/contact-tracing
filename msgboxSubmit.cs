@@ -21,5 +21,15 @@ namespace contact_tracing
         {
             this.Hide();
         }
+
+        private void msgboxSubmit_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSuccess_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
