@@ -171,5 +171,16 @@ namespace contact_tracing
                 }
             }
         }
+
+        private void btnScanQRCode_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2(this);
+            frm.Show();
+        }
+
+        private void picBoxQRCode_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

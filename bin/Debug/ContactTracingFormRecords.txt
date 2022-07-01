@@ -523,3 +523,33 @@ Since: 06/24/2022
 
 Thank you for using the contact tracing form application!
 
+WARNING: As per Privacy Policy, only the administrators are allowed to open this file.
+The following personal details below are automatically generated into this text file by BCN's Contact Tracing Form App. You may use this text file or copy its' contents for contact tracing purposes.
+
+Full Name: Bernard Cammayo Narceda
+Sex: Male
+Age: 19
+Address: Blk. 26 Lot. 24, Palmera Springs Phase 3-A Extension, Brgy. 175 Camarin, Caloocan
+E-mail: bnarceda.04@gmail.com
+Contact No.: 09287507053
+Are you experiencing COVID-19 symptoms? No.
+Are you Vaccinated? Yes, 2nd dose, AstraZeneca
+Since: 06/24/2022
+
+Thank you for using the contact tracing form application!
+
+WARNING: As per Privacy Policy, only the administrators are allowed to open this file.
+The following personal details below are automatically generated into this text file by BCN's Contact Tracing Form App. You may use this text file or copy its' contents for contact tracing purposes.
+
+Full Name: Bernard Cammayo Narceda
+Sex: Male
+Age: 19
+Address: Blk. 26 Lot. 24, Palmera Springs Phase 3-A Extension, Brgy. 175 Camarin, Caloocan
+E-mail: bnarceda.04@gmail.com
+Contact No.: 09287507053
+Are you experiencing COVID-19 symptoms? No.
+Are you Vaccinated? Yes, 2nd dose, AstraZeneca.
+Since: 06/24/2022
+
+Thank you for using the contact tracing form application!
+

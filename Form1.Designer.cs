@@ -369,7 +369,7 @@
             this.dataGVRecords.Name = "dataGVRecords";
             this.dataGVRecords.RowHeadersWidth = 62;
             this.dataGVRecords.RowTemplate.Height = 28;
-            this.dataGVRecords.Size = new System.Drawing.Size(548, 160);
+            this.dataGVRecords.Size = new System.Drawing.Size(548, 180);
             this.dataGVRecords.TabIndex = 31;
             this.dataGVRecords.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -387,7 +387,7 @@
             // 
             this.lblFilter.AutoSize = true;
             this.lblFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblFilter.Location = new System.Drawing.Point(681, 238);
+            this.lblFilter.Location = new System.Drawing.Point(681, 262);
             this.lblFilter.Name = "lblFilter";
             this.lblFilter.Size = new System.Drawing.Size(274, 22);
             this.lblFilter.TabIndex = 33;
@@ -396,7 +396,7 @@
             // 
             // txtBoxDateFilter
             // 
-            this.txtBoxDateFilter.Location = new System.Drawing.Point(961, 236);
+            this.txtBoxDateFilter.Location = new System.Drawing.Point(961, 260);
             this.txtBoxDateFilter.Name = "txtBoxDateFilter";
             this.txtBoxDateFilter.Size = new System.Drawing.Size(114, 26);
             this.txtBoxDateFilter.TabIndex = 38;
@@ -407,7 +407,7 @@
             this.lblDateFilterFormat.AutoSize = true;
             this.lblDateFilterFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateFilterFormat.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblDateFilterFormat.Location = new System.Drawing.Point(681, 269);
+            this.lblDateFilterFormat.Location = new System.Drawing.Point(681, 293);
             this.lblDateFilterFormat.Name = "lblDateFilterFormat";
             this.lblDateFilterFormat.Size = new System.Drawing.Size(327, 20);
             this.lblDateFilterFormat.TabIndex = 39;
@@ -415,7 +415,7 @@
             // 
             // btnViewFilteredDate
             // 
-            this.btnViewFilteredDate.Location = new System.Drawing.Point(1136, 236);
+            this.btnViewFilteredDate.Location = new System.Drawing.Point(1136, 260);
             this.btnViewFilteredDate.Name = "btnViewFilteredDate";
             this.btnViewFilteredDate.Size = new System.Drawing.Size(96, 43);
             this.btnViewFilteredDate.TabIndex = 40;
@@ -461,6 +461,7 @@
             this.picBoxQRCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picBoxQRCode.TabIndex = 42;
             this.picBoxQRCode.TabStop = false;
+            this.picBoxQRCode.Click += new System.EventHandler(this.picBoxQRCode_Click);
             // 
             // label2
             // 
@@ -489,6 +490,7 @@
             this.btnScanQRCode.TabIndex = 45;
             this.btnScanQRCode.Text = "Scan QR Code";
             this.btnScanQRCode.UseVisualStyleBackColor = true;
+            this.btnScanQRCode.Click += new System.EventHandler(this.btnScanQRCode_Click);
             // 
             // Form1
             // 
