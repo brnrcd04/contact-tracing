@@ -58,14 +58,14 @@
             this.lblSince = new System.Windows.Forms.Label();
             this.dateTimePickerVaccination = new System.Windows.Forms.DateTimePicker();
             this.dataGVRecords = new System.Windows.Forms.DataGridView();
+            this.columnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblRecords = new System.Windows.Forms.Label();
             this.lblFilter = new System.Windows.Forms.Label();
             this.txtBoxDateFilter = new System.Windows.Forms.TextBox();
             this.lblDateFilterFormat = new System.Windows.Forms.Label();
             this.btnViewFilteredDate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.columnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.picBoxQRCode = new System.Windows.Forms.PictureBox();
             this.lblInfoQRCode = new System.Windows.Forms.Label();
             this.lblInfoIcon2 = new System.Windows.Forms.Label();
@@ -349,12 +349,12 @@
             // 
             this.dateTimePickerVaccination.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerVaccination.Location = new System.Drawing.Point(516, 507);
-            this.dateTimePickerVaccination.MaxDate = new System.DateTime(2022, 6, 24, 0, 0, 0, 0);
+            this.dateTimePickerVaccination.MaxDate = new System.DateTime(2022, 7, 1, 0, 0, 0, 0);
             this.dateTimePickerVaccination.MinDate = new System.DateTime(2021, 3, 1, 0, 0, 0, 0);
             this.dateTimePickerVaccination.Name = "dateTimePickerVaccination";
             this.dateTimePickerVaccination.Size = new System.Drawing.Size(120, 26);
             this.dateTimePickerVaccination.TabIndex = 30;
-            this.dateTimePickerVaccination.Value = new System.DateTime(2022, 6, 24, 0, 0, 0, 0);
+            this.dateTimePickerVaccination.Value = new System.DateTime(2022, 7, 1, 0, 0, 0, 0);
             this.dateTimePickerVaccination.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dataGVRecords
@@ -372,6 +372,25 @@
             this.dataGVRecords.Size = new System.Drawing.Size(548, 180);
             this.dataGVRecords.TabIndex = 31;
             this.dataGVRecords.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // columnFullName
+            // 
+            this.columnFullName.Frozen = true;
+            this.columnFullName.HeaderText = "Full Name";
+            this.columnFullName.MinimumWidth = 8;
+            this.columnFullName.Name = "columnFullName";
+            this.columnFullName.ReadOnly = true;
+            this.columnFullName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.columnFullName.Width = 200;
+            // 
+            // columnDate
+            // 
+            this.columnDate.HeaderText = "Vaccinated since";
+            this.columnDate.MinimumWidth = 8;
+            this.columnDate.Name = "columnDate";
+            this.columnDate.ReadOnly = true;
+            this.columnDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.columnDate.Width = 150;
             // 
             // lblRecords
             // 
@@ -433,24 +452,6 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "VER\r\n3.0";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // columnFullName
-            // 
-            this.columnFullName.Frozen = true;
-            this.columnFullName.HeaderText = "Full Name";
-            this.columnFullName.MinimumWidth = 8;
-            this.columnFullName.Name = "columnFullName";
-            this.columnFullName.ReadOnly = true;
-            this.columnFullName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.columnFullName.Width = 200;
-            // 
-            // columnDate
-            // 
-            this.columnDate.HeaderText = "Vaccinated since";
-            this.columnDate.MinimumWidth = 8;
-            this.columnDate.Name = "columnDate";
-            this.columnDate.ReadOnly = true;
-            this.columnDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // picBoxQRCode
             // 
