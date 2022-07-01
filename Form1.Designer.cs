@@ -67,8 +67,8 @@
             this.columnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.picBoxQRCode = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblInfoQRCode = new System.Windows.Forms.Label();
+            this.lblInfoIcon2 = new System.Windows.Forms.Label();
             this.btnScanQRCode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVRecords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQRCode)).BeginInit();
@@ -415,9 +415,9 @@
             // 
             // btnViewFilteredDate
             // 
-            this.btnViewFilteredDate.Location = new System.Drawing.Point(1136, 260);
+            this.btnViewFilteredDate.Location = new System.Drawing.Point(1158, 260);
             this.btnViewFilteredDate.Name = "btnViewFilteredDate";
-            this.btnViewFilteredDate.Size = new System.Drawing.Size(96, 43);
+            this.btnViewFilteredDate.Size = new System.Drawing.Size(74, 43);
             this.btnViewFilteredDate.TabIndex = 40;
             this.btnViewFilteredDate.Text = "View";
             this.btnViewFilteredDate.UseVisualStyleBackColor = true;
@@ -463,30 +463,30 @@
             this.picBoxQRCode.TabStop = false;
             this.picBoxQRCode.Click += new System.EventHandler(this.picBoxQRCode_Click);
             // 
-            // label2
+            // lblInfoQRCode
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1044, 380);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 240);
-            this.label2.TabIndex = 43;
-            this.label2.Text = resources.GetString("label2.Text");
+            this.lblInfoQRCode.AutoSize = true;
+            this.lblInfoQRCode.Location = new System.Drawing.Point(1044, 382);
+            this.lblInfoQRCode.Name = "lblInfoQRCode";
+            this.lblInfoQRCode.Size = new System.Drawing.Size(188, 240);
+            this.lblInfoQRCode.TabIndex = 43;
+            this.lblInfoQRCode.Text = resources.GetString("lblInfoQRCode.Text");
             // 
-            // label3
+            // lblInfoIcon2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Font Awesome 5 Pro Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1041, 331);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 38);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "";
+            this.lblInfoIcon2.AutoSize = true;
+            this.lblInfoIcon2.Font = new System.Drawing.Font("Font Awesome 5 Pro Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoIcon2.Location = new System.Drawing.Point(1041, 334);
+            this.lblInfoIcon2.Name = "lblInfoIcon2";
+            this.lblInfoIcon2.Size = new System.Drawing.Size(53, 38);
+            this.lblInfoIcon2.TabIndex = 44;
+            this.lblInfoIcon2.Text = "";
             // 
             // btnScanQRCode
             // 
             this.btnScanQRCode.Location = new System.Drawing.Point(1048, 641);
             this.btnScanQRCode.Name = "btnScanQRCode";
-            this.btnScanQRCode.Size = new System.Drawing.Size(184, 43);
+            this.btnScanQRCode.Size = new System.Drawing.Size(131, 43);
             this.btnScanQRCode.TabIndex = 45;
             this.btnScanQRCode.Text = "Scan QR Code";
             this.btnScanQRCode.UseVisualStyleBackColor = true;
@@ -498,8 +498,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 710);
             this.Controls.Add(this.btnScanQRCode);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblInfoQRCode);
+            this.Controls.Add(this.lblInfoIcon2);
             this.Controls.Add(this.picBoxQRCode);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblFacemaskIcon);
@@ -590,8 +590,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn columnFullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnDate;
         private System.Windows.Forms.PictureBox picBoxQRCode;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblInfoQRCode;
+        private System.Windows.Forms.Label lblInfoIcon2;
         private System.Windows.Forms.Button btnScanQRCode;
     }
 }

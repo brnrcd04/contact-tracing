@@ -34,12 +34,12 @@
             this.txtBoxScanned = new System.Windows.Forms.TextBox();
             this.btnStartScanning = new System.Windows.Forms.Button();
             this.lblCamera = new System.Windows.Forms.Label();
-            this.lblSubmitButtonInfo = new System.Windows.Forms.Label();
-            this.lblInfoIcon = new System.Windows.Forms.Label();
+            this.lblStartScanningInfo = new System.Windows.Forms.Label();
+            this.lblInfoIcon3 = new System.Windows.Forms.Label();
             this.cboxCamera = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblViewfinder = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblScanned = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxViewfinder)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,24 +84,24 @@
             this.lblCamera.TabIndex = 4;
             this.lblCamera.Text = "Camera:";
             // 
-            // lblSubmitButtonInfo
+            // lblStartScanningInfo
             // 
-            this.lblSubmitButtonInfo.AutoSize = true;
-            this.lblSubmitButtonInfo.Location = new System.Drawing.Point(74, 465);
-            this.lblSubmitButtonInfo.Name = "lblSubmitButtonInfo";
-            this.lblSubmitButtonInfo.Size = new System.Drawing.Size(691, 60);
-            this.lblSubmitButtonInfo.TabIndex = 25;
-            this.lblSubmitButtonInfo.Text = resources.GetString("lblSubmitButtonInfo.Text");
+            this.lblStartScanningInfo.AutoSize = true;
+            this.lblStartScanningInfo.Location = new System.Drawing.Point(74, 465);
+            this.lblStartScanningInfo.Name = "lblStartScanningInfo";
+            this.lblStartScanningInfo.Size = new System.Drawing.Size(684, 60);
+            this.lblStartScanningInfo.TabIndex = 25;
+            this.lblStartScanningInfo.Text = resources.GetString("lblStartScanningInfo.Text");
             // 
-            // lblInfoIcon
+            // lblInfoIcon3
             // 
-            this.lblInfoIcon.AutoSize = true;
-            this.lblInfoIcon.Font = new System.Drawing.Font("Font Awesome 5 Pro Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfoIcon.Location = new System.Drawing.Point(23, 467);
-            this.lblInfoIcon.Name = "lblInfoIcon";
-            this.lblInfoIcon.Size = new System.Drawing.Size(53, 38);
-            this.lblInfoIcon.TabIndex = 26;
-            this.lblInfoIcon.Text = "";
+            this.lblInfoIcon3.AutoSize = true;
+            this.lblInfoIcon3.Font = new System.Drawing.Font("Font Awesome 5 Pro Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoIcon3.Location = new System.Drawing.Point(23, 467);
+            this.lblInfoIcon3.Name = "lblInfoIcon3";
+            this.lblInfoIcon3.Size = new System.Drawing.Size(53, 38);
+            this.lblInfoIcon3.TabIndex = 26;
+            this.lblInfoIcon3.Text = "";
             // 
             // cboxCamera
             // 
@@ -113,40 +113,40 @@
             this.cboxCamera.Size = new System.Drawing.Size(270, 28);
             this.cboxCamera.TabIndex = 27;
             // 
-            // label1
+            // lblViewfinder
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(167, 424);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 20);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Viewfinder";
+            this.lblViewfinder.AutoSize = true;
+            this.lblViewfinder.Location = new System.Drawing.Point(167, 424);
+            this.lblViewfinder.Name = "lblViewfinder";
+            this.lblViewfinder.Size = new System.Drawing.Size(83, 20);
+            this.lblViewfinder.TabIndex = 28;
+            this.lblViewfinder.Text = "Viewfinder";
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label2
+            // lblScanned
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(437, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(315, 22);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Data obtained from scanned QR Code";
+            this.lblScanned.AutoSize = true;
+            this.lblScanned.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScanned.Location = new System.Drawing.Point(437, 29);
+            this.lblScanned.Name = "lblScanned";
+            this.lblScanned.Size = new System.Drawing.Size(315, 22);
+            this.lblScanned.TabIndex = 29;
+            this.lblScanned.Text = "Data obtained from scanned QR Code";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 549);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblScanned);
+            this.Controls.Add(this.lblViewfinder);
             this.Controls.Add(this.cboxCamera);
-            this.Controls.Add(this.lblSubmitButtonInfo);
-            this.Controls.Add(this.lblInfoIcon);
+            this.Controls.Add(this.lblStartScanningInfo);
+            this.Controls.Add(this.lblInfoIcon3);
             this.Controls.Add(this.lblCamera);
             this.Controls.Add(this.btnStartScanning);
             this.Controls.Add(this.txtBoxScanned);
@@ -169,11 +169,11 @@
         private System.Windows.Forms.TextBox txtBoxScanned;
         private System.Windows.Forms.Button btnStartScanning;
         private System.Windows.Forms.Label lblCamera;
-        private System.Windows.Forms.Label lblSubmitButtonInfo;
-        private System.Windows.Forms.Label lblInfoIcon;
+        private System.Windows.Forms.Label lblStartScanningInfo;
+        private System.Windows.Forms.Label lblInfoIcon3;
         private System.Windows.Forms.ComboBox cboxCamera;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblViewfinder;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblScanned;
     }
 }
