@@ -10,3 +10,5 @@ C:\Users\bern\source\repos\contact-tracing\obj\Debug\contact-tracing.csproj.Core
 C:\Users\bern\source\repos\contact-tracing\obj\Debug\contact-tracing.exe
 C:\Users\bern\source\repos\contact-tracing\obj\Debug\contact-tracing.pdb
 C:\Users\bern\source\repos\contact-tracing\obj\Debug\contact_tracing.msgboxSubmit.resources
+C:\Users\bern\source\repos\contact-tracing\bin\Debug\QRCoder.dll
+C:\Users\bern\source\repos\contact-tracing\obj\Debug\contact-tracing.csproj.CopyComplete

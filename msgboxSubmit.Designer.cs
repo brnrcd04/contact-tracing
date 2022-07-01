@@ -40,7 +40,7 @@
             this.lblSuccess.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblSuccess.Location = new System.Drawing.Point(22, 143);
             this.lblSuccess.Name = "lblSuccess";
-            this.lblSuccess.Size = new System.Drawing.Size(494, 250);
+            this.lblSuccess.Size = new System.Drawing.Size(494, 225);
             this.lblSuccess.TabIndex = 0;
             this.lblSuccess.Text = resources.GetString("lblSuccess.Text");
             this.lblSuccess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -58,7 +58,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(254, 429);
+            this.button1.Location = new System.Drawing.Point(254, 403);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 36);
             this.button1.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 484);
+            this.ClientSize = new System.Drawing.Size(586, 462);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCheckIcon);
             this.Controls.Add(this.lblSuccess);

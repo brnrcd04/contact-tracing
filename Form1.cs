@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using QRCoder;
 
 namespace contact_tracing
 {
@@ -71,6 +72,11 @@ namespace contact_tracing
             m.Show();
 
             dataGVRecords.Rows.Add(txtBoxFullName.Text, dateTimePickerVaccination.Text);
+
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(String.Join(" ", lblFullName.Text + " " + txtBoxFullName.Text, "/", lblSex.Text + " " + txtBoxSex.Text, "/", lblAge.Text + " " + txtBoxAge.Text, "/", lblAddress.Text + " " + txtBoxAddress.Text, "/", lblEmail.Text + " " + txtBoxEmail.Text, "/", lblContactNo.Text + " " + txtBoxContactNo.Text, "/", lblSymptoms.Text + " " + txtBoxSymptoms.Text, "/", lblVaccinated.Text + " " + txtBoxVaccinated.Text, "/", lblSince.Text + " " + dateTimePickerVaccination.Text), QRCodeGenerator.ECCLevel.L);
+            QRCode code = new QRCode(data);
+            picBoxQRCode.Image = code.GetGraphic(3);
         }
 
         private void lblSubmitButtonInfo_Click(object sender, EventArgs e)
